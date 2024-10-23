@@ -1,91 +1,41 @@
-$p: hsl(213deg 85% 97%);
-$s: hsl(233deg 36% 38%);
-* { font-family: 'Poppins' }
-@mixin screen {
-	background: $p;
-	padding: 2em;
-	display: flex;
-	flex-direction: column;
-	border-radius: 30px;
-	box-shadow: 0 0 2em hsl(231deg 62% 94%);
-}
 body {
-	user-select: none;
-	overflow-y: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: hsl(218deg 50% 91%);
-	height: 100vh;
-}
-.screen-1 {
-	@include screen;
-	gap: 2em;
-	.logo { margin-top: -3em }
-	.email {
-		background: hsl(0deg 0% 100%);
-		box-shadow: 0 0 2em hsl(231deg 62% 94%);
-		padding: 1em;
-		display: flex;
-		flex-direction: column;
-		gap: 0.5em;
-		border-radius: 20px;
-		color: hsl(0deg 0% 30%);
-		margin-top: -3em;
-		input {
-			outline: none;
-			border: none;
-			&::placeholder {
-				color: hsl(0deg 0% 0%);
-				font-size: 0.9em;
-			}
-		}
-		ion-icon {
-			color: hsl(0deg 0% 30%);
-			margin-bottom: -.2em;
-		}
-	}
-	.password {
-		background: hsl(0deg 0% 100%);
-		box-shadow: 0 0 2em hsl(231deg 62% 94%);
-		padding: 1em;
-		display: flex;
-		flex-direction: column;
-		gap: 0.5em;
-		border-radius: 20px;
-		color: hsl(0deg 0% 30%);
-		input {
-			outline: none;
-			border: none;
-			&::placeholder {
-				color: hsl(0deg 0% 0%);
-				font-size: 0.9em;
-			}
-		}
-		ion-icon {
-			color: hsl(0deg 0% 30%);
-			margin-bottom: -.2em;
-		}
-		.show-hide {
-			margin-right: -5em;
-		}
-	}
-	.login {
-		padding: 1em;
-		background: hsl(233deg 36% 38%);
-		color: hsl(0 0 100);
-		border: none;
-		border-radius: 30px;
-		font-weight: 600;
-	}
-	.footer {
-		display: flex;
-		font-size: 0.7em;
-		color: hsl(0deg 0% 37%);
-		gap: 14em;
-		padding-bottom: 10em;
-		span { cursor: pointer }
-	}
+    background-image: url('Background-image .jpg');
+    background-size: cover;
+    width: 357px;
+    height: 690px;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
 }
 
-button { cursor: pointer; }
+.container {
+    margin-top: 219px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    width: 161px;
+    height: 210px;
+    margin: 0 7px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+        margin-bottom: 244px;
+    }
+
+    &:nth-child(2) {
+        margin-top: 16px;
+    }
+
+    &:nth-child(3) {
+        margin-top: 448px;
+        margin-bottom: 15px;
+    }
+
+    &:nth-child(4) {
+        margin-top: 16px;
+        margin-bottom: 15px;
+    }
+}
