@@ -1,115 +1,41 @@
-* {
-  font-family: "Poppins";
-}
-
 body {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #dde5f4;
-  height: 100vh;
+    background-image: url('Background-image .jpg');
+    background-size: cover;
+    width: 357px;
+    height: 690px;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
 }
 
-.screen-1 {
-  background: #f1f7fe;
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  border-radius: 30px;
-  box-shadow: 0 0 2em #e6e9f9;
-  gap: 2em;
-}
-.screen-1 .logo {
-  margin-top: -3em;
-}
-.screen-1 .email {
-  background: white;
-  box-shadow: 0 0 2em #e6e9f9;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  border-radius: 20px;
-  color: #4d4d4d;
-  margin-top: -3em;
-}
-.screen-1 .email input {
-  outline: none;
-  border: none;
-}
-.screen-1 .email input::-moz-placeholder {
-  color: black;
-  font-size: 0.9em;
-}
-.screen-1 .email input:-ms-input-placeholder {
-  color: black;
-  font-size: 0.9em;
-}
-.screen-1 .email input::placeholder {
-  color: black;
-  font-size: 0.9em;
-}
-.screen-1 .email ion-icon {
-  color: #4d4d4d;
-  margin-bottom: -0.2em;
-}
-.screen-1 .password {
-  background: white;
-  box-shadow: 0 0 2em #e6e9f9;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-  border-radius: 20px;
-  color: #4d4d4d;
-}
-.screen-1 .password input {
-  outline: none;
-  border: none;
-}
-.screen-1 .password input::-moz-placeholder {
-  color: black;
-  font-size: 0.9em;
-}
-.screen-1 .password input:-ms-input-placeholder {
-  color: black;
-  font-size: 0.9em;
-}
-.screen-1 .password input::placeholder {
-  color: black;
-  font-size: 0.9em;
-}
-.screen-1 .password ion-icon {
-  color: #4d4d4d;
-  margin-bottom: -0.2em;
-}
-.screen-1 .password .show-hide {
-  margin-right: -5em;
-}
-.screen-1 .login {
-  padding: 1em;
-  background: #3e4684;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  font-weight: 600;
-}
-.screen-1 .footer {
-  display: flex;
-  font-size: 0.7em;
-  color: #5e5e5e;
-  gap: 14em;
-  padding-bottom: 10em;
-}
-.screen-1 .footer span {
-  cursor: pointer;
+.container {
+    margin-top: 219px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-button {
-  cursor: pointer;
+.image {
+    width: 161px;
+    height: 210px;
+    margin: 0 7px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+        margin-bottom: 244px;
+    }
+
+    &:nth-child(2) {
+        margin-top: 16px;
+    }
+
+    &:nth-child(3) {
+        margin-top: 448px;
+        margin-bottom: 15px;
+    }
+
+    &:nth-child(4) {
+        margin-top: 16px;
+        margin-bottom: 15px;
+    }
 }
